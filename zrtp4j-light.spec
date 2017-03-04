@@ -68,6 +68,9 @@ find . -name "*.class" -delete
 # Add groupId
 %pom_xpath_inject "pom:project" "<groupId>org.jitsi</groupId>" ./m2/%{name}/
 
+# Fix version
+%pom_xpath_replace "pom:project/pom:version" "<version>%{version}</version>" m2/%{name}/
+
 # Fix missing version
 %pom_xpath_inject "pom:plugin[pom:artifactId[./text()='maven-compiler-plugin']]" "
 	<version>any</version>" ./m2/%{name}/
