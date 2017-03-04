@@ -21,8 +21,8 @@ BuildRequires:	maven-local
 BuildRequires:	mvn(junit:junit)
 BuildRequires:	mvn(org.apache.felix:maven-bundle-plugin)
 BuildRequires:	mvn(org.bouncycastle:bcprov-jdk15on)
-BuildRequires:	mvn(jitsi.org:bccontrib)
-BuildRequires:	mvn(jitsi.org:fmj)
+BuildRequires:	mvn(org.jitsi:bccontrib)
+BuildRequires:	mvn(org.jitsi:fmj)
 
 %description
 This package provides a library that adds ZRTP support to JMF
